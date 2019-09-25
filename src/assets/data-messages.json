@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "message": "Сообщение 1",
+      "status": "show"
+    },
+    {
+    "message": "Сообщение 2",
+    "status": "show"
+    },
+    {
+    "message": "Сообщение 3",
+    "status": "show"
+    },
+    {
+    "message": "Сообщение 4",
+    "status": "show"
+    },
+    {
+    "message": "Сообщение 5",
+    "status": "show"
+    }
+  ]
+}

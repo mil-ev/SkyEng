@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <message :msgs="dataMessages"></message>
+    <messages :msgs="dataMessages"></messages>
+    <send-message :msgs="dataMessages"></send-message>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Message from './components/Message'
+import Messages from './components/Messages'
+import SendMessage from "./components/SendMessage";
+import dataMessages from './assets/data-messages'
 
 export default {
+  data () {
+    return {
+      dataMessages: dataMessages
+    }
+  },
   name: 'app',
   components: {
-    HelloWorld
+    Message,
+    Messages,
+    SendMessage
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    margin-top: 60px;
+  }
+  * {
+    box-sizing: border-box;
+  }
 </style>
